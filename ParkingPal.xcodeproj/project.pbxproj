@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078318961FD648E800908F2D /* ParkingDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0783188E1FD648E700908F2D /* ParkingDetailsViewController.m */; };
+		078318971FD648E800908F2D /* ParkingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0783188F1FD648E700908F2D /* ParkingListViewController.m */; };
+		078318981FD648E800908F2D /* ParkingPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 078318911FD648E700908F2D /* ParkingPal.xcdatamodeld */; };
+		078318991FD648E800908F2D /* ParkingRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 078318931FD648E800908F2D /* ParkingRecord.m */; };
 		07F59CDB1FD64826008E95A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F59CDA1FD64826008E95A2 /* AppDelegate.m */; };
 		07F59CDE1FD64826008E95A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F59CDD1FD64826008E95A2 /* ViewController.m */; };
 		07F59CE11FD64826008E95A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F59CDF1FD64826008E95A2 /* Main.storyboard */; };
@@ -36,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0783188E1FD648E700908F2D /* ParkingDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingDetailsViewController.m; sourceTree = "<group>"; };
+		0783188F1FD648E700908F2D /* ParkingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingListViewController.m; sourceTree = "<group>"; };
+		078318901FD648E700908F2D /* ParkingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingListViewController.h; sourceTree = "<group>"; };
+		078318921FD648E700908F2D /* ParkingPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParkingPal.xcdatamodel; sourceTree = "<group>"; };
+		078318931FD648E800908F2D /* ParkingRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingRecord.m; sourceTree = "<group>"; };
+		078318941FD648E800908F2D /* ParkingRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingRecord.h; sourceTree = "<group>"; };
+		078318951FD648E800908F2D /* ParkingDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingDetailsViewController.h; sourceTree = "<group>"; };
 		07F59CD61FD64826008E95A2 /* ParkingPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F59CD91FD64826008E95A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07F59CDA1FD64826008E95A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +114,13 @@
 		07F59CD81FD64826008E95A2 /* ParkingPal */ = {
 			isa = PBXGroup;
 			children = (
+				078318951FD648E800908F2D /* ParkingDetailsViewController.h */,
+				0783188E1FD648E700908F2D /* ParkingDetailsViewController.m */,
+				078318901FD648E700908F2D /* ParkingListViewController.h */,
+				0783188F1FD648E700908F2D /* ParkingListViewController.m */,
+				078318911FD648E700908F2D /* ParkingPal.xcdatamodeld */,
+				078318941FD648E800908F2D /* ParkingRecord.h */,
+				078318931FD648E800908F2D /* ParkingRecord.m */,
 				07F59CD91FD64826008E95A2 /* AppDelegate.h */,
 				07F59CDA1FD64826008E95A2 /* AppDelegate.m */,
 				07F59CDC1FD64826008E95A2 /* ViewController.h */,
@@ -268,9 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078318961FD648E800908F2D /* ParkingDetailsViewController.m in Sources */,
+				078318971FD648E800908F2D /* ParkingListViewController.m in Sources */,
 				07F59CDE1FD64826008E95A2 /* ViewController.m in Sources */,
 				07F59CE41FD64826008E95A2 /* ParkingPal.xcdatamodeld in Sources */,
 				07F59CEC1FD64826008E95A2 /* main.m in Sources */,
+				078318991FD648E800908F2D /* ParkingRecord.m in Sources */,
+				078318981FD648E800908F2D /* ParkingPal.xcdatamodeld in Sources */,
 				07F59CDB1FD64826008E95A2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,6 +580,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		078318911FD648E700908F2D /* ParkingPal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				078318921FD648E700908F2D /* ParkingPal.xcdatamodel */,
+			);
+			currentVersion = 078318921FD648E700908F2D /* ParkingPal.xcdatamodel */;
+			path = ParkingPal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		07F59CE21FD64826008E95A2 /* ParkingPal.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
