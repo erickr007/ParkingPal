@@ -9,6 +9,7 @@
 #import "ParkingListViewController.h"
 #import "ParkingDetailsViewController.h"
 #import "ParkingRecord.h"
+#import "AppDelegate.h"
 
 @interface ParkingListViewController ()
 
@@ -21,6 +22,22 @@
     // Do any additional setup after loading the view.
     
     [self loadData];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    
+    //- setup fetch request
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.managedContext = appDelegate.persistentContainer.viewContext;
+    
+    NSFetchRequest *fetchRequest = [NSFetchRequest<NSManagedObject *>  fetchRequestWithEntityName:@"ParkingRecord"];
+    NSError *error = nil;
+    
+    self.records = [self.managedContext executeFetchRequest:fetchRequest error:&error];
+    
+    if(!self.records){
+        NSLog(@"Error occurred fetching parking records: %@\n%@", [error localizedDescription], [error userInfo]);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
